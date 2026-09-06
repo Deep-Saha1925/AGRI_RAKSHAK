@@ -17,6 +17,8 @@ without losing too many correct predictions to "uncertain".
 """
 
 from ultralytics import YOLO
+import cv2
+import numpy as np
 
 MODEL_PATH = "models/best.pt"
 MODEL_VERSION = "v1.0"
@@ -26,7 +28,34 @@ THRESHOLD_HIGH = 0.75   # at/above this -> confident detection
 THRESHOLD_LOW = 0.45    # below this -> uncertain, needs human review
                         # between the two -> still shown, but a borderline case
 
+MIN_GREEN_RATIO = 0.08  # if less than 8% of the image looks plant-colored,
+                        # it's probably not a leaf photo at all
+
 model = YOLO(MODEL_PATH)
+
+
+def looks_like_plant(image_path):
+    """
+    Quick heuristic pre-filter (no ML, just color analysis) to catch
+    obvious non-plant photos before wasting a model prediction on them.
+    Checks what fraction of the image falls in a green/leaf-like color
+    range (covers healthy green AND many disease colors - brown spots,
+    yellowing, rust - since we're checking broadly, not just healthy-green).
+    """
+    img = cv2.imread(image_path)
+    if img is None:
+        return False, 0.0
+
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
+    # Broad range covering green (healthy) through yellow-brown (diseased/dried)
+    # Hue: ~15-95 covers yellow through green in OpenCV's 0-180 hue scale
+    lower = np.array([15, 30, 30])
+    upper = np.array([95, 255, 255])
+    mask = cv2.inRange(hsv, lower, upper)
+
+    plant_ratio = np.count_nonzero(mask) / mask.size
+    return plant_ratio >= MIN_GREEN_RATIO, plant_ratio
 
 
 def classify_image(image_path, crop_name):
@@ -34,9 +63,32 @@ def classify_image(image_path, crop_name):
     Takes an image path and the crop name (as provided by the farmer app
     or backend), returns the exact JSON shape needed for the API.
     """
+    # Pre-filter: does this even look like a plant photo?
+    is_plant, green_ratio = looks_like_plant(image_path)
+    if not is_plant:
+        return {
+            "disease": "Not identifiable - image does not appear to be a plant/leaf photo",
+            "confidence": round(green_ratio, 2),
+            "status": "uncertain",
+            "crop": crop_name,
+            "model_version": MODEL_VERSION,
+        }
+
     results = model(image_path, verbose=False)
     top1_conf = results[0].probs.top1conf.item()
     top1_class = results[0].names[results[0].probs.top1]
+
+    # NEW: if the model itself predicts "Other_Crop" (a crop outside our
+    # 4 supported ones), that's a genuine learned signal - no need for
+    # threshold or crop-matching logic, just report it directly.
+    if top1_class == "Other_Crop":
+        return {
+            "disease": "Not one of the supported crops (corn, cotton, soybean, sugarcane)",
+            "confidence": round(top1_conf, 2),
+            "status": "uncertain",
+            "crop": crop_name,
+            "model_version": MODEL_VERSION,
+        }
 
     # Determine status
     if "healthy" in top1_class.lower():
