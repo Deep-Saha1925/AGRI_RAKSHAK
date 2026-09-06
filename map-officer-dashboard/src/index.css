@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Agri Rakshak color system: green / white / beige */
+  --color-agri-green-50: #f0f7ed;
+  --color-agri-green-100: #dcebd3;
+  --color-agri-green-200: #b9d7a9;
+  --color-agri-green-300: #8fbd78;
+  --color-agri-green-400: #5f9e4a;
+  --color-agri-green-500: #3f7d2f;
+  --color-agri-green-600: #2f6323;
+  --color-agri-green-700: #26501d;
+  --color-agri-green-800: #1f3f18;
+  --color-agri-green-900: #16300f;
+
+  --color-agri-beige-50: #fdfcf9;
+  --color-agri-beige-100: #f8f4ea;
+  --color-agri-beige-200: #f0e8d4;
+  --color-agri-beige-300: #e5d8b8;
+  --color-agri-beige-400: #d6c294;
+
+  --color-agri-red: #c0392b;
+  --color-agri-amber: #d98e04;
+  --color-agri-blue: #2e6f9e;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-agri-beige-50);
+  color: #26321f;
+}
