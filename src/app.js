@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 
 const authRoutes = require("./routes/auth");
 const fieldsRoutes = require("./routes/fields");
@@ -13,6 +14,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser());
 app.use("/uploads", express.static("uploads"));
 
 app.get("/api/health", (req, res) => res.json({ status: "ok" }));
