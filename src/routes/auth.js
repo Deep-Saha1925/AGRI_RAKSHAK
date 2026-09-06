@@ -9,6 +9,7 @@ const router = express.Router();
 // POST /api/auth/register
 router.post("/register", async (req, res) => {
   const { role, name, phone, password, language } = req.body;
+  console.log("Registering user:", { role, name, phone, language });
   if (!role || !name || !phone || !password) {
     return res.status(400).json({ error: "role, name, phone, password are required" });
   }
