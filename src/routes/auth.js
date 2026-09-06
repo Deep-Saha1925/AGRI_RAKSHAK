@@ -35,6 +35,7 @@ router.post("/login", async (req, res) => {
   if (!valid) return res.status(401).json({ error: "Invalid credentials" });
 
   const token = signToken(user);
+  res.cookie("access_token", `Bearer ${token}`, { httpOnly: true, secure: process.env.NODE_ENV === "production" });
   res.json({ access: token, role: user.role, id: user.id });
 });
 
