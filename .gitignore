@@ -1,3 +1,8 @@
+venv/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
 ai-detection/data/
 .venv/
 __pycache__/
@@ -5,7 +10,6 @@ __pycache__/
 runs/
 *.zip
 node_modules/
-<<<<<<< HEAD
 build/
 dist/
 coverage/
@@ -18,4 +22,3 @@ coverage/
 uploads/
 dist/
 *.log
->>>>>>> 63ff522f6e9e8f550b37d1bcf59cd797a5b6d1d5
