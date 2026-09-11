@@ -1,6 +1,11 @@
-﻿ai-detection/data/
+ai-detection/data/
 .venv/
 __pycache__/
 *.pyc
 runs/
 *.zip
+node_modules/
+.env
+uploads/
+dist/
+*.log
