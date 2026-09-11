@@ -5,7 +5,17 @@ __pycache__/
 runs/
 *.zip
 node_modules/
+<<<<<<< HEAD
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+=======
 .env
 uploads/
 dist/
 *.log
+>>>>>>> 63ff522f6e9e8f550b37d1bcf59cd797a5b6d1d5
