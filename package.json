@@ -1,0 +1,10 @@
+{
+  "name": "person6-advisory",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Person 6 - Advisory + Integration + Follow-up - Matches API Contract v0.2 Node/Express",
+  "main": "advisory.routes.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
