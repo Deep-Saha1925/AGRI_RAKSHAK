@@ -1,0 +1,702 @@
+[
+  {
+    "diagnosis_id": 1,
+    "field_id": 1,
+    "lat": 20.06395,
+    "lng": 78.8946,
+    "disease": "Grey Mildew",
+    "confidence": 0.76,
+    "status": "routed_officer",
+    "created_at": "2026-08-20T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 2,
+    "field_id": 2,
+    "lat": 20.27065,
+    "lng": 77.92084,
+    "disease": "Aphids",
+    "confidence": 0.95,
+    "status": "routed_farmer",
+    "created_at": "2026-08-19T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 3,
+    "field_id": 3,
+    "lat": 19.98589,
+    "lng": 78.52112,
+    "disease": "Grey Mildew",
+    "confidence": 0.56,
+    "status": "routed_officer",
+    "created_at": "2026-09-19T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 4,
+    "field_id": 4,
+    "lat": 20.53462,
+    "lng": 78.13521,
+    "disease": "Aphids",
+    "confidence": 0.94,
+    "status": "routed_farmer",
+    "created_at": "2026-10-06T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 5,
+    "field_id": 5,
+    "lat": 20.40297,
+    "lng": 77.63463,
+    "disease": "Pink Bollworm",
+    "confidence": 0.93,
+    "status": "routed_farmer",
+    "created_at": "2026-09-24T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 6,
+    "field_id": 6,
+    "lat": 18.56531,
+    "lng": 76.08997,
+    "disease": "Pink Bollworm",
+    "confidence": 0.88,
+    "status": "routed_officer",
+    "created_at": "2026-09-21T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 7,
+    "field_id": 7,
+    "lat": 19.59182,
+    "lng": 77.6545,
+    "disease": "Aphids",
+    "confidence": 0.57,
+    "status": "routed_officer",
+    "created_at": "2026-08-29T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 8,
+    "field_id": 8,
+    "lat": 19.88777,
+    "lng": 78.72777,
+    "disease": "Pink Bollworm",
+    "confidence": 0.79,
+    "status": "routed_officer",
+    "created_at": "2026-10-08T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 9,
+    "field_id": 9,
+    "lat": 20.06193,
+    "lng": 78.12353,
+    "disease": "Grey Mildew",
+    "confidence": 0.88,
+    "status": "routed_officer",
+    "created_at": "2026-09-10T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 10,
+    "field_id": 10,
+    "lat": 20.47262,
+    "lng": 77.78949,
+    "disease": "Grey Mildew",
+    "confidence": 0.88,
+    "status": "routed_officer",
+    "created_at": "2026-08-22T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 11,
+    "field_id": 11,
+    "lat": 21.2228,
+    "lng": 77.64155,
+    "disease": "Pink Bollworm",
+    "confidence": 0.89,
+    "status": "routed_officer",
+    "created_at": "2026-08-21T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 12,
+    "field_id": 12,
+    "lat": 21.2073,
+    "lng": 77.79556,
+    "disease": "Parawilt",
+    "confidence": 0.58,
+    "status": "routed_officer",
+    "created_at": "2026-09-20T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 13,
+    "field_id": 13,
+    "lat": 20.82462,
+    "lng": 78.22746,
+    "disease": "Pink Bollworm",
+    "confidence": 0.75,
+    "status": "routed_officer",
+    "created_at": "2026-08-28T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 14,
+    "field_id": 14,
+    "lat": 21.23906,
+    "lng": 77.83218,
+    "disease": "Aphids",
+    "confidence": 0.91,
+    "status": "routed_farmer",
+    "created_at": "2026-09-11T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 15,
+    "field_id": 15,
+    "lat": 21.4461,
+    "lng": 76.96367,
+    "disease": "Aphids",
+    "confidence": 0.64,
+    "status": "routed_officer",
+    "created_at": "2026-09-21T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 16,
+    "field_id": 16,
+    "lat": 20.90878,
+    "lng": 77.28971,
+    "disease": "Aphids",
+    "confidence": 0.84,
+    "status": "pending_review",
+    "created_at": "2026-09-03T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 17,
+    "field_id": 17,
+    "lat": 20.92431,
+    "lng": 77.52921,
+    "disease": "Pink Bollworm",
+    "confidence": 0.86,
+    "status": "routed_officer",
+    "created_at": "2026-09-28T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 18,
+    "field_id": 18,
+    "lat": 21.18411,
+    "lng": 77.64949,
+    "disease": "Pink Bollworm",
+    "confidence": 0.74,
+    "status": "routed_officer",
+    "created_at": "2026-09-20T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 19,
+    "field_id": 19,
+    "lat": 21.22519,
+    "lng": 77.62993,
+    "disease": "Aphids",
+    "confidence": 0.95,
+    "status": "routed_farmer",
+    "created_at": "2026-09-15T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 20,
+    "field_id": 20,
+    "lat": 21.17312,
+    "lng": 77.31809,
+    "disease": "Aphids",
+    "confidence": 0.77,
+    "status": "routed_officer",
+    "created_at": "2026-09-02T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 21,
+    "field_id": 21,
+    "lat": 21.01735,
+    "lng": 79.18918,
+    "disease": "Earias spp.",
+    "confidence": 0.8,
+    "status": "routed_officer",
+    "created_at": "2026-08-17T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 22,
+    "field_id": 22,
+    "lat": 21.29566,
+    "lng": 79.00637,
+    "disease": "Grey Mildew",
+    "confidence": 0.51,
+    "status": "pending_review",
+    "created_at": "2026-10-02T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 23,
+    "field_id": 23,
+    "lat": 20.69773,
+    "lng": 79.35054,
+    "disease": "Grey Mildew",
+    "confidence": 0.77,
+    "status": "routed_officer",
+    "created_at": "2026-09-05T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 24,
+    "field_id": 24,
+    "lat": 21.22188,
+    "lng": 78.84435,
+    "disease": "Grey Mildew",
+    "confidence": 0.84,
+    "status": "routed_officer",
+    "created_at": "2026-09-22T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 25,
+    "field_id": 25,
+    "lat": 21.20872,
+    "lng": 78.5516,
+    "disease": "Earias spp.",
+    "confidence": 0.82,
+    "status": "routed_officer",
+    "created_at": "2026-08-19T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 26,
+    "field_id": 26,
+    "lat": 21.28155,
+    "lng": 79.43558,
+    "disease": "Pink Bollworm",
+    "confidence": 0.86,
+    "status": "routed_officer",
+    "created_at": "2026-09-14T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 27,
+    "field_id": 27,
+    "lat": 21.05065,
+    "lng": 79.584,
+    "disease": "Grey Mildew",
+    "confidence": 0.81,
+    "status": "verified",
+    "created_at": "2026-08-18T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 28,
+    "field_id": 28,
+    "lat": 20.80016,
+    "lng": 79.30031,
+    "disease": "Grey Mildew",
+    "confidence": 0.83,
+    "status": "routed_officer",
+    "created_at": "2026-09-25T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 29,
+    "field_id": 29,
+    "lat": 20.86563,
+    "lng": 78.91276,
+    "disease": "Grey Mildew",
+    "confidence": 0.68,
+    "status": "verified",
+    "created_at": "2026-09-02T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 30,
+    "field_id": 30,
+    "lat": 21.57071,
+    "lng": 78.98004,
+    "disease": "Grey Mildew",
+    "confidence": 0.64,
+    "status": "verified",
+    "created_at": "2026-10-10T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 31,
+    "field_id": 31,
+    "lat": 19.79951,
+    "lng": 75.87009,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.7,
+    "status": "routed_officer",
+    "created_at": "2026-09-09T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 32,
+    "field_id": 32,
+    "lat": 19.59967,
+    "lng": 76.36454,
+    "disease": "Rust",
+    "confidence": 0.76,
+    "status": "routed_officer",
+    "created_at": "2026-08-20T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 33,
+    "field_id": 33,
+    "lat": 20.1814,
+    "lng": 75.69133,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.71,
+    "status": "routed_officer",
+    "created_at": "2026-09-09T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 34,
+    "field_id": 34,
+    "lat": 19.62656,
+    "lng": 75.84213,
+    "disease": "Girdle Beetle",
+    "confidence": 0.89,
+    "status": "routed_officer",
+    "created_at": "2026-10-10T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 35,
+    "field_id": 35,
+    "lat": 19.8442,
+    "lng": 76.30894,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.7,
+    "status": "routed_officer",
+    "created_at": "2026-10-09T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 36,
+    "field_id": 36,
+    "lat": 19.39687,
+    "lng": 75.93259,
+    "disease": "Girdle Beetle",
+    "confidence": 0.77,
+    "status": "routed_officer",
+    "created_at": "2026-09-29T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 37,
+    "field_id": 37,
+    "lat": 20.33835,
+    "lng": 76.08333,
+    "disease": "Rust",
+    "confidence": 0.86,
+    "status": "routed_officer",
+    "created_at": "2026-09-27T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 38,
+    "field_id": 38,
+    "lat": 19.95236,
+    "lng": 75.57712,
+    "disease": "Rust",
+    "confidence": 0.67,
+    "status": "verified",
+    "created_at": "2026-08-24T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 39,
+    "field_id": 39,
+    "lat": 19.66192,
+    "lng": 76.41049,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.84,
+    "status": "routed_officer",
+    "created_at": "2026-08-24T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 40,
+    "field_id": 40,
+    "lat": 20.17523,
+    "lng": 75.97368,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.73,
+    "status": "routed_officer",
+    "created_at": "2026-08-15T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 41,
+    "field_id": 41,
+    "lat": 18.03514,
+    "lng": 76.87561,
+    "disease": "Rust",
+    "confidence": 0.97,
+    "status": "routed_farmer",
+    "created_at": "2026-10-14T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 42,
+    "field_id": 42,
+    "lat": 18.53868,
+    "lng": 76.30161,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.84,
+    "status": "routed_officer",
+    "created_at": "2026-09-13T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 43,
+    "field_id": 43,
+    "lat": 18.48344,
+    "lng": 76.50639,
+    "disease": "Rust",
+    "confidence": 0.88,
+    "status": "routed_officer",
+    "created_at": "2026-09-09T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 44,
+    "field_id": 44,
+    "lat": 18.60207,
+    "lng": 76.9713,
+    "disease": "Rust",
+    "confidence": 0.88,
+    "status": "routed_officer",
+    "created_at": "2026-09-14T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 45,
+    "field_id": 45,
+    "lat": 18.76091,
+    "lng": 77.04845,
+    "disease": "Rust",
+    "confidence": 0.59,
+    "status": "routed_officer",
+    "created_at": "2026-08-27T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 46,
+    "field_id": 46,
+    "lat": 18.57936,
+    "lng": 77.00787,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.55,
+    "status": "routed_officer",
+    "created_at": "2026-09-12T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 47,
+    "field_id": 47,
+    "lat": 18.55932,
+    "lng": 77.23667,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.98,
+    "status": "routed_farmer",
+    "created_at": "2026-09-05T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 48,
+    "field_id": 48,
+    "lat": 18.76116,
+    "lng": 76.88918,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.76,
+    "status": "verified",
+    "created_at": "2026-08-15T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 49,
+    "field_id": 49,
+    "lat": 18.28157,
+    "lng": 76.78026,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.8,
+    "status": "routed_officer",
+    "created_at": "2026-10-14T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 50,
+    "field_id": 50,
+    "lat": 18.66138,
+    "lng": 76.60168,
+    "disease": "Rust",
+    "confidence": 0.6,
+    "status": "verified",
+    "created_at": "2026-08-19T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 51,
+    "field_id": 51,
+    "lat": 18.41801,
+    "lng": 75.86702,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.79,
+    "status": "routed_officer",
+    "created_at": "2026-10-08T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 52,
+    "field_id": 52,
+    "lat": 18.09197,
+    "lng": 76.22462,
+    "disease": "Girdle Beetle",
+    "confidence": 0.83,
+    "status": "routed_officer",
+    "created_at": "2026-09-14T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 53,
+    "field_id": 53,
+    "lat": 18.35623,
+    "lng": 75.51393,
+    "disease": "Girdle Beetle",
+    "confidence": 0.82,
+    "status": "verified",
+    "created_at": "2026-08-20T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 54,
+    "field_id": 54,
+    "lat": 18.05107,
+    "lng": 76.27301,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.61,
+    "status": "routed_officer",
+    "created_at": "2026-10-01T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 55,
+    "field_id": 55,
+    "lat": 17.96142,
+    "lng": 76.05586,
+    "disease": "Girdle Beetle",
+    "confidence": 0.91,
+    "status": "routed_farmer",
+    "created_at": "2026-09-14T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 56,
+    "field_id": 56,
+    "lat": 18.21795,
+    "lng": 76.21365,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.68,
+    "status": "routed_officer",
+    "created_at": "2026-08-28T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 57,
+    "field_id": 57,
+    "lat": 18.28081,
+    "lng": 76.2015,
+    "disease": "Girdle Beetle",
+    "confidence": 0.91,
+    "status": "routed_farmer",
+    "created_at": "2026-09-28T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 58,
+    "field_id": 58,
+    "lat": 18.50811,
+    "lng": 75.315,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.7,
+    "status": "pending_review",
+    "created_at": "2026-09-25T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 59,
+    "field_id": 59,
+    "lat": 18.48898,
+    "lng": 75.47042,
+    "disease": "Yellow Mosaic Virus",
+    "confidence": 0.69,
+    "status": "verified",
+    "created_at": "2026-09-17T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 60,
+    "field_id": 60,
+    "lat": 17.90367,
+    "lng": 75.88864,
+    "disease": "Girdle Beetle",
+    "confidence": 0.65,
+    "status": "verified",
+    "created_at": "2026-09-06T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 61,
+    "field_id": 61,
+    "lat": 20.39397,
+    "lng": 79.13311,
+    "disease": "Pod Borer",
+    "confidence": 0.73,
+    "status": "pending_review",
+    "created_at": "2026-10-06T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 62,
+    "field_id": 62,
+    "lat": 20.06273,
+    "lng": 79.09492,
+    "disease": "Wilt",
+    "confidence": 0.72,
+    "status": "pending_review",
+    "created_at": "2026-08-27T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 63,
+    "field_id": 63,
+    "lat": 19.91148,
+    "lng": 79.58706,
+    "disease": "Wilt",
+    "confidence": 0.72,
+    "status": "routed_officer",
+    "created_at": "2026-09-30T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 64,
+    "field_id": 64,
+    "lat": 20.34356,
+    "lng": 78.83599,
+    "disease": "Pod Borer",
+    "confidence": 0.69,
+    "status": "routed_officer",
+    "created_at": "2026-10-04T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 65,
+    "field_id": 65,
+    "lat": 20.34248,
+    "lng": 79.18231,
+    "disease": "Wilt",
+    "confidence": 0.87,
+    "status": "routed_officer",
+    "created_at": "2026-08-31T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 66,
+    "field_id": 66,
+    "lat": 20.01074,
+    "lng": 79.55091,
+    "disease": "Pod Borer",
+    "confidence": 0.65,
+    "status": "pending_review",
+    "created_at": "2026-09-12T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 67,
+    "field_id": 67,
+    "lat": 20.06205,
+    "lng": 79.82325,
+    "disease": "Wilt",
+    "confidence": 0.97,
+    "status": "routed_farmer",
+    "created_at": "2026-08-20T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 68,
+    "field_id": 68,
+    "lat": 20.69618,
+    "lng": 79.49507,
+    "disease": "Pod Borer",
+    "confidence": 0.86,
+    "status": "routed_officer",
+    "created_at": "2026-08-29T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 69,
+    "field_id": 69,
+    "lat": 20.22441,
+    "lng": 79.2304,
+    "disease": "Wilt",
+    "confidence": 0.71,
+    "status": "routed_officer",
+    "created_at": "2026-09-05T08:30:00Z"
+  },
+  {
+    "diagnosis_id": 70,
+    "field_id": 70,
+    "lat": 20.45354,
+    "lng": 79.79228,
+    "disease": "Pod Borer",
+    "confidence": 0.79,
+    "status": "pending_review",
+    "created_at": "2026-09-23T08:30:00Z"
+  }
+]

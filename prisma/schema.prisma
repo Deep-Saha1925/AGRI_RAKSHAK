@@ -1,0 +1,104 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  farmer
+  officer
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+enum DiagnosisStatus {
+  pending_review
+  routed_farmer
+  routed_officer
+  verified
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String   @unique
+  password  String
+  role      Role
+  language  String   @default("en")
+  createdAt DateTime @default(now())
+
+  fields Field[]
+}
+
+model Field {
+  id           Int      @id @default(autoincrement())
+  farmer       User     @relation(fields: [farmerId], references: [id])
+  farmerId     Int
+  crop         String
+  variety      String?
+  growthStage  String
+  soilType     String
+  lat          Float
+  lng          Float
+  createdAt    DateTime @default(now())
+
+  risks       Risk[]
+  diagnoses   Diagnosis[]
+  alerts      Alert[]
+}
+
+model Risk {
+  id            Int      @id @default(autoincrement())
+  field         Field    @relation(fields: [fieldId], references: [id])
+  fieldId       Int
+  riskLevel     RiskLevel
+  riskScore     Float
+  irrigation    String
+  reason        String
+  computedAt    DateTime @default(now())
+}
+
+model Diagnosis {
+  id                Int             @id @default(autoincrement())
+  field             Field           @relation(fields: [fieldId], references: [id])
+  fieldId           Int
+  imageUrl          String
+  disease           String?
+  confidence        Float?
+  status            DiagnosisStatus @default(pending_review)
+  verified          Boolean         @default(false)
+  correctedDisease  String?
+  createdAt         DateTime        @default(now())
+}
+
+model Advisory {
+  id         Int      @id @default(autoincrement())
+  disease    String   @unique
+  steps      Json
+  escalateIf String
+}
+
+model Recheck {
+  id           Int      @id @default(autoincrement())
+  diagnosisId  Int
+  scheduledFor DateTime
+  status       String?  // "improved" | "worsened" | null (pending)
+  createdAt    DateTime @default(now())
+}
+
+model Alert {
+  id        Int      @id @default(autoincrement())
+  field     Field    @relation(fields: [fieldId], references: [id])
+  fieldId   Int
+  type      String   // "risk" | "diagnosis" | "advisory"
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
