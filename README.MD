@@ -236,9 +236,6 @@ This project was built by a team, with each module owned by a different contribu
 | 📱 Farmer App | `src/pages/`, `src/components/`, `src/api/` |
 | 🗺️ Maps & Officer Dashboard | `map-officer-dashboard/` |
 | 📋 Advisory Content | `advisory/` |
-
-**Contributors:** Snaha Kundu · Sunipa Bose · Anwesha Saha · Sarnadip Saha · Subhankar · Deep Saha
-
 ---
 
 ## 📌 Notes
@@ -256,5 +253,11 @@ No license file is currently included in this repository. Please contact the mai
 <div align="center">
 
 Made with 🌱 for Maharashtra's farmers
+
+---
+
+## Contributors
+
+ Snaha Kundu · Sunipa Bose · Anwesha Saha · Sarnadip Saha · Subhankar Das · Deep Saha
 
 </div>
